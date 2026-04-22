@@ -1,6 +1,9 @@
 // Let's go
 
-#include <stdio.h> //Biblioteca do printf
+#include <stdio.h> 
+#include <string.h>
+
+//Biblioteca do printf
 
 // int main() {   // Aqui é o comando que inicia todo o código.
 //     printf("Olá Mundo!\n");
@@ -27,11 +30,12 @@
 
 // }
 
+// ------------------------------------------
 
 int main(){
     int idade;
     float peso;
-    char nome[20]; 
+    char nome[50]; 
 
     printf("Digite sua idade: ");
     scanf("%d", &idade);
@@ -41,9 +45,22 @@ int main(){
     scanf("%f", &peso);
     printf("Seu peso é: %.3f\n", peso);
 
+    getchar(),
+
     printf("Digite seu nome: ");
-    scanf("%s", nome);
+    fgets(nome, 50, stdin);
+    nome[strcspn(nome, "\n")] = 0; 
     printf("Seu nome é: %s\n", nome);
 
     return 0; 
 }
+// ----------------------------------
+
+// int main(){
+
+//     int x = 10;
+//     printf("%d\n", x);  
+//     printf("%p\n", &x); 
+
+// }
+
