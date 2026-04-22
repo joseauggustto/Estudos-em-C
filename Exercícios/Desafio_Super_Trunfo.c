@@ -4,7 +4,7 @@
 #include <string.h>
 
 int main(){
-    float area, pib;
+    float area, pib, dens_popul, pib_per_capita;
     int populacao, numerospt;
     char estado[10], codigo_carta[10], nome_cidade[30];
 
@@ -32,9 +32,12 @@ int main(){
    printf("Digite o número de pontos turísticos: ");
    scanf("%d", &numerospt);
 
+   dens_popul = populacao / area; // No desafio Aventureiro, foi adicionado apenas isso aqui, o resto foi todo do nível iniciante.
+   pib_per_capita =  (pib * 1000000000.0) / populacao;
+
    printf("\n---Primeira Carta Cadastrada com Sucesso!--- \n |");
    printf(" Carta 1: \n | Estado: %s\n | Código: %s0%s\n | Nome da Cidade: %s\n |", codigo_carta, estado, codigo_carta, nome_cidade);  
-   printf(" População: %d\n | Área: %.2fKM²\n | PIB: R$%.2f bilhões\n | Números pontos turísticos: %d\n", populacao, area, pib, numerospt);  
+   printf(" População: %d\n | Área: %.2fKM²\n | PIB: R$%.2f bilhões\n | Números pontos turísticos: %d\n | Densidade Populacional: %.2f\n | PIB  per Capita: %.2f\n", populacao, area, pib, numerospt, dens_popul, pib_per_capita);  
 
 
 //------------------------------------------
@@ -66,9 +69,12 @@ int main(){
    printf("Digite o número de pontos turísticos: ");
    scanf("%d", &numerospt);
 
-   printf("\n---Segunda Carta Cadastrada com Sucesso!--- \n |");
-   printf(" Carta 2: \n | Estado: %s\n | Código: %s0%s\n | Nome da Cidade: %s\n |", codigo_carta, estado, codigo_carta, nome_cidade);  
-   printf(" População: %d\n | Área: %.2fKM²\n | PIB: R$%.2f bilhões\n | Números pontos turísticos: %d\n", populacao, area, pib, numerospt); 
+   dens_popul = populacao / area; // No desafio Aventureiro, foi adicionado apenas isso aqui, o resto foi todo do nível iniciante.
+   pib_per_capita = (pib * 1000000000.0) / populacao;
+
+   printf("\n---Primeira Carta Cadastrada com Sucesso!--- \n |");
+   printf(" Carta 1: \n | Estado: %s\n | Código: %s0%s\n | Nome da Cidade: %s\n |", codigo_carta, estado, codigo_carta, nome_cidade);  
+   printf(" População: %d\n | Área: %.2fKM²\n | PIB: R$%.2f bilhões\n | Números pontos turísticos: %d\n | Densidade Populacional: %.2f\n | PIB  per Capita: %.2f\n", populacao, area, pib, numerospt, dens_popul, pib_per_capita);
 
 
 
