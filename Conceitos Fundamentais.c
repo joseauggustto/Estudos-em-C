@@ -7,7 +7,7 @@
 
     Utilizar nomes significativos é de suma importância para que as coisas fiquem de fácil entendimento.
 
-    Programar é parecido com seguir uma receita. 
+    Programar é parecido com seguir uma receita. Dividir para conquistar!
     Dividimos um problema grande em partes menores e mais gerenciáveis, o que torna a resolução mais fácil e organizada.
 
     Para um código limpo: Indentização, Comentários e Nomes Significativos.
@@ -30,7 +30,7 @@
   A linguagem C é muito versátil, posso fazer desde Sistemas Operacionais até jogos. 
        > Outro adendo: ela é uma linguagem copilada, ela precisa de um software para que o código possa rodar.
 
-  O passo a passo de programação: > Entendimento do problema; > Planejamento; > Codificação; > Compilação, > Teste, > Depuração, > Manutenção.
+  O passo a passo de programação: > Entendimento do problema; > Planejamento; > Codificação; > Compilação(tradução); > Teste; > Depuração(verificar erros); > Manutenção.
 
   Linguagem de programação é um conjunto de instruções que são usadas para se comunicar com o computador, cada uma tem seu "idioma" próprio.
   Cada linguagem tem sua própria sintaxe (regras sobre como escrever o código) e semântica (significado das instruções).
@@ -75,8 +75,6 @@
 -----------------------------------------------
 
     Entrada de Dados: 
-
-saef
 
     
   */
