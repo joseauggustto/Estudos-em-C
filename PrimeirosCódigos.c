@@ -216,36 +216,38 @@ if (condition){
 }
 
 */
-int main(){
+// int main(){
 
-    int idade, dependente;
-    float salario;
+//     int idade, dependente;
+//     float salario;
 
-    printf("Qual a sua idade? ");
-    scanf("%d", &idade);
+//     printf("Qual a sua idade? ");
+//     scanf("%d", &idade);
 
-    printf("Qual o seu salário? "); 
-    scanf("%f", &salario); 
+//     printf("Qual o seu salário? "); 
+//     scanf("%f", &salario); 
 
-    printf("Quantos dependentes? ");
-    scanf("%d", &dependente);
+//     printf("Quantos dependentes? ");
+//     scanf("%d", &dependente);
 
-    if (idade >= 18 && idade <= 50){
-        if (salario <= 2000){
-            if (dependente > 2){   
-            }
-                printf("Você está qualificado para o desconto.");  
-        } else {
-            printf("Você não atende o critério salário."); 
-        }
-    } else {
-        printf("Você não atende ao critério Idade.");
-    }
+//     if (idade >= 18 && idade <= 50){
+//         if (salario <= 2000){
+//             if (dependente > 2){ 
+//                 printf("Você está qualificado para o desconto.");
+//             } else {
+//                 printf("Você não atende ao critério dependentes.");
+//             }        
+//         } else {
+//             printf("Você não atende o critério salário."); 
+//         }
+//     } else {
+//         printf("Você não atende ao critério Idade.");
+//     }
 
 
-return 0;
+// return 0;
 
-}
+//}
 //############################################
 
 
@@ -265,3 +267,18 @@ if (condição){
 }
 
 */
+int main(){
+    
+    int num = 0;
+
+    if (num < 0){
+        printf("Esse número é negativo\n");
+    } else if (num == 0){
+        printf("Esse número é 0.");
+        } else {
+            printf("Esse número é positivo.");
+        }
+
+return 0;
+
+}
