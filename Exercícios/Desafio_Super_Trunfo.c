@@ -76,8 +76,6 @@ int main(){
    printf(" Carta 1: \n | Estado: %s\n | Código: %s0%s\n | Nome da Cidade: %s\n |", codigo_carta, estado, codigo_carta, nome_cidade);  
    printf(" População: %d\n | Área: %.2fKM²\n | PIB: R$%.2f bilhões\n | Números pontos turísticos: %d\n | Densidade Populacional: %.2f\n | PIB  per Capita: %.2f\n", populacao, area, pib, numerospt, dens_popul, pib_per_capita);
 
-
-
    printf("\n\n ----Fim do programa, até logo!----\n\n");
 
    return 0; 
