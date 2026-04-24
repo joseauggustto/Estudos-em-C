@@ -128,6 +128,12 @@
     != - diferente de 
 
     ele vai retornar 1 para confirmar que sim, e 0 para retornar não. 
+ 
+    ##################### ###################### #####################
+
+    ESTRUTURAS DE DECISÃO IF E ELSE. ---
+
+    
 
     
 
