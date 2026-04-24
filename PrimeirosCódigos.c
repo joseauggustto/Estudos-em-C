@@ -3,6 +3,7 @@
 #include <stdio.h> 
 #include <string.h>
 
+
 //Biblioteca do printf
 
 // int main() {   // Aqui é o comando que inicia todo o código.
@@ -136,31 +137,131 @@
 
 // ########################################
 
+
+// int main(){
+
+//     int a, b, num;
+    
+//     printf("Digite um número: ");
+//     scanf("%d", &a);
+
+//     printf("Digite um número: ");
+//     scanf("%d", &b);
+
+//         if (a >= b) {
+//             printf("A é maior que B\n");  
+//         } else {
+//             printf("A não é maior que B\n");
+//         }
+
+//     printf("Digite um número: ");
+//     scanf("%d", &num);
+
+//         if (num % 2 == 0) { 
+//             printf("O número é par\n"); 
+//         } else { 
+//             printf("O número é impar\n");
+//         }
+    
+//     return 0;
+
+// }
+
+// ##########################################################
+
+// int main(){
+    
+    // int a, b, c, d;
+
+    // printf("Digite um número A: ");
+    // scanf("%d", &a);
+
+    // printf("Digite um número B: ");
+    // scanf("%d", &b);
+
+    // if (a > 0 && b > 0){
+    //     printf("A e B são positivos.\n");
+    // }
+    
+    // if (a > 0 || b > 0){
+    //     printf("Algum deles é positivo\n");
+    // }
+    
+    // if (!a){
+    //     printf("A é zero\n");
+    // }
+    
+    // float altura = 1.89;
+    // float idade = 22;
+    
+    // if (idade >= 18 && idade <= 30 && altura >= 1.80){
+    //     printf("Vocẽ atende os requisitos.\n");
+    // } else {
+    //     printf("Você não atende os requisitos.\n");
+
+    // }
+
+// ##################################################
+
+/*
+Estruturas de decisão aninhadas.
+
+Nessa estrutura uma decisão só será executada se a de cima foi verdadeira 
+
+Assim:
+
+if (condition){
+    if (condition){
+    }
+}
+
+*/
 int main(){
 
-    int a, b, num;
-    
-    printf("Digite um número: ");
-    scanf("%d", &a);
+    int idade, dependente;
+    float salario;
 
-    printf("Digite um número: ");
-    scanf("%d", &b);
+    printf("Qual a sua idade? ");
+    scanf("%d", &idade);
 
-        if (a >= b) {
-            printf("A é maior que B\n");  
+    printf("Qual o seu salário? "); 
+    scanf("%f", &salario); 
+
+    printf("Quantos dependentes? ");
+    scanf("%d", &dependente);
+
+    if (idade >= 18 && idade <= 50){
+        if (salario <= 2000){
+            if (dependente > 2){   
+            }
+                printf("Você está qualificado para o desconto.");  
         } else {
-            printf("A não é maior que B\n");
+            printf("Você não atende o critério salário."); 
         }
+    } else {
+        printf("Você não atende ao critério Idade.");
+    }
 
-    printf("Digite um número: ");
-    scanf("%d", &num);
 
-        if (num % 2 == 0) { 
-            printf("O número é par\n"); 
-        } else { 
-            printf("O número é impar\n");
-        }
-    
-    return 0;
+return 0;
 
 }
+//############################################
+
+
+/* 
+Estruturas de Decisão Encadeadas.
+
+Uma só será executada se a outra for falsa. 
+E se todas forem falsas, a última será executada.
+Assim: 
+
+if (condição){
+
+} else if (condição) {
+ 
+} else {
+ 
+}
+
+*/
