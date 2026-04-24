@@ -138,18 +138,29 @@
 
 int main(){
 
-    int a = 20;
-    int b = 10;
+    int a, b, num;
+    
+    printf("Digite um número: ");
+    scanf("%d", &a);
 
-    if (a > b) {
-        printf("A é maior que B\n");  
-    } else {
-        printf("A não é maior que B\n");
-    }
+    printf("Digite um número: ");
+    scanf("%d", &b);
 
+        if (a >= b) {
+            printf("A é maior que B\n");  
+        } else {
+            printf("A não é maior que B\n");
+        }
+
+    printf("Digite um número: ");
+    scanf("%d", &num);
+
+        if (num % 2 == 0) { 
+            printf("O número é par\n"); 
+        } else { 
+            printf("O número é impar\n");
+        }
+    
     return 0;
-
- 
-
 
 }
