@@ -133,46 +133,14 @@
 
     ESTRUTURAS DE DECISÃO IF E ELSE. ---
 
-    
+    Fundamentos -
 
     
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
+
+
   */
