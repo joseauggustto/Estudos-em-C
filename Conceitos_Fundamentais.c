@@ -93,6 +93,59 @@
 
     -------------------------------------------
 
+    MODIFICADORES DE TIPOS DE DADOS ---
+
+    São usados para alterar as propriedades dos tipos de dados primitivos, 
+    permitindo uma manipulação mais precisa e eficiente das variáveis.
+
+    - A váriável int vai de -2 bilhões até +2 bilhões em diante, 
+    ela é usada para valores positivos e negativos. 
+
+    - o unsigned int é usado para valores do 0 até mais +4 bilhões,
+    só trabalha com positivos em diante. Importante para estoques e etc...
+
+    - char vai de -128 até +127
+
+    - unsigned char vai de 0 até 255. 
+
+    (o unsigned sempre vai retirar as casas negativas dos dados, dobrando o número de casas positivas.)
+
+    - long é usado para aumentar muito a precisão de núemros int e double.
+
+    (double é usado para valores decimais muito grandes)
+
+    - a variável short é usada para números pequenos e para economizar memória.
+
+    ---------------------------------------------------
+
+    OPERADORES RELACIONAIS
+
+    == - igual
+    >= - maior ou igual
+    <= - menor ou igual
+    > - maior quê
+    < - menor quê
+    != - diferente de 
+
+    ele vai retornar 1 para confirmar que sim, e 0 para retornar não. 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
