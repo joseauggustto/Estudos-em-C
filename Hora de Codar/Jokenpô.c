@@ -1,3 +1,5 @@
+// Jokenpô em C !
+
 # include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
@@ -40,13 +42,11 @@ int main(){
         } else {
             printf("Você perdeu!\n");
         }
-
         break;
-
+        
     case 2:
         printf("\nSaindo do jogo. Até logo!\n\n");
         break;
-
     default:
         printf("Opção inválida, Adeus.\n");
         break;
