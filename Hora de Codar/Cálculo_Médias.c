@@ -30,10 +30,10 @@ int main(){
                 break;
 
                 case 2:
-                    printf("\n---Status Aluno.---");
+                    printf("\n---Status Aluno.---\n");
                     if (media >= 7){
                         printf("\nVocê está aprovado!\n");
-                    } else if (media >= 5 || media < 7){
+                    } else if (media >= 6 || media < 7){
                         printf("\nAluno em Recuperação!\n");
                     } else {
                         printf("\nAluno Reprovado!\n");
