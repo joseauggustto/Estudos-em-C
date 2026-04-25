@@ -373,7 +373,12 @@ Sem essas estruturas, os desenvolvedores teriam que duplicar manualmente o códi
 resultando em scripts longos, redundantes e propensos a erros.
 
 
-
-
-
 */
+
+int main(){
+
+
+
+
+
+}

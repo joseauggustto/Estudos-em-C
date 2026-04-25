@@ -7,52 +7,57 @@
 int main(){
 
     int opcoes, escolhajogador, escolhapc; 
+    srand(time(NULL));
 
-    printf("\nMenu principal\n\n");
-    printf("1 - Iniciar Jogo.\n");
-    printf("2 - Saindo do Jogo.\n");
-    printf("\n\nEscolha uma das opções acima: ");
-    scanf("%d", &opcoes);
+    do
+    {
 
-    switch (opcoes){
-    case 1:
-        printf("\n\n---Iniciando jogo.---\n");
-        srand(time(NULL));
-        escolhapc = rand() % 3;    
+            printf("\nMenu principal\n\n");
+            printf("1 - Iniciar Jogo.\n");
+            printf("2 - Saindo do Jogo.\n");
+            printf("\n\nEscolha uma das opções acima: ");
+            scanf("%d", &opcoes);
 
-        printf("\nEscolha o seu!\n\n");
-        printf(" | 0 - Pedra\n | 1 - Papel\n | 2 - Tesoura\n");
-        printf("\nSua escolha é: ");
-        scanf("%d", &escolhajogador);  
+            switch (opcoes){
+            case 1:
+                printf("\n\n---Iniciando jogo.---\n");
+                
+                escolhapc = rand() % 3;    
 
-            printf("\nO computador escolheu...   -   ");
+                printf("\nEscolha o seu!\n\n");
+                printf(" | 0 - Pedra\n | 1 - Papel\n | 2 - Tesoura\n");
+                printf("\nSua escolha é: ");
+                scanf("%d", &escolhajogador);  
 
-            if (escolhapc == 0){
-                printf("Pedra!\n\n");
-            } else if (escolhapc == 1)
-                printf("Papel!\n\n");
-                else printf("Tesoura!\n\n");
+                    printf("\nO computador escolheu...   -   ");
 
-        if (escolhajogador == escolhapc){
-            printf("---Empate, vai de novo!---\n");
-        } else if ((escolhajogador == 0 && escolhapc == 2) || 
-                    (escolhajogador == 1 && escolhapc == 0) || 
-                    (escolhajogador == 2 && escolhapc == 1)) {
-            printf("Você venceu! Parabéns.\n\n");
-        } else {
-            printf("Você perdeu!\n");
-        }
-        break;
-        
-    case 2:
-        printf("\nSaindo do jogo. Até logo!\n\n");
-        break;
-    default:
-        printf("Opção inválida, Adeus.\n");
-        break;
-    }
+                    if (escolhapc == 0){
+                        printf("Pedra!\n\n");
+                    } else if (escolhapc == 1)
+                        printf("Papel!\n\n");
+                        else printf("Tesoura!\n\n");
 
-return 0;
+                if (escolhajogador == escolhapc){
+                    printf("---Empate, vai de novo!---\n");
+                } else if ((escolhajogador == 0 && escolhapc == 2) || 
+                            (escolhajogador == 1 && escolhapc == 0) || 
+                            (escolhajogador == 2 && escolhapc == 1)) {
+                    printf("Você venceu! Parabéns.\n\n");
+                } else {
+                    printf("Você perdeu!\n");
+                }
+                break;
+                
+            case 2:
+                printf("\nSaindo do jogo. Até logo!\n\n");
+                break;
+            default:
+                printf("Opção inválida, Adeus.\n");
+                break;
+            } 
+    } while (opcoes == 1 || opcoes != 2);   
+
+
+    return 0;
 
 }
-
