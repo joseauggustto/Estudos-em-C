@@ -1,16 +1,14 @@
-# include <stdio.h>
+# include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
 
 int main(){
 
-    int opcoes, escolhajogador, escolhapc;
-    char pedra, papel, tesoura; 
+    int opcoes, escolhajogador, escolhapc; 
 
     printf("\nMenu principal\n\n");
     printf("1 - Iniciar Jogo.\n");
-    printf("2 - Regras do Jogo.\n");
-    printf("3 - Saindo do Jogo.\n");
+    printf("2 - Saindo do Jogo.\n");
     printf("\n\nEscolha uma das opções acima: ");
     scanf("%d", &opcoes);
 
@@ -39,18 +37,16 @@ int main(){
                     (escolhajogador == 1 && escolhapc == 0) || 
                     (escolhajogador == 2 && escolhapc == 1)) {
             printf("Você venceu! Parabéns.\n\n");
-
         } else {
             printf("Você perdeu!\n");
         }
 
         break;
+
     case 2:
-        printf("Regras do Jogo.");
+        printf("\nSaindo do jogo. Até logo!\n\n");
         break;
-    case 3:
-        printf("Saindo do jogo. Até logo!\n");
-        break;
+
     default:
         printf("Opção inválida, Adeus.\n");
         break;
