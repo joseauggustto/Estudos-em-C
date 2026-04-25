@@ -2,6 +2,8 @@
 
 #include <stdio.h> 
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 
 //Biblioteca do printf
@@ -283,7 +285,7 @@ if (condição){
 
 // }
 
-//##########################################
+// ########################################################
 
 /*
 Uso do Switch.
@@ -324,16 +326,42 @@ switch (varivavel){
 
 // }
 
-// #########################################
+// #############################################################
 
 /*
 
-Menus interativos usando Switch.
-
-
-
-
-
-
+Menus interativos usando Switch. ---
 
 */
+
+int main(){
+
+    int opcoes;
+
+    printf("\nMenu principal\n");
+    printf("1 - Iniciar Jogo.\n");
+    printf("2 - Regras do Jogo.\n");
+    printf("3 - Saindo do Jogo.\n");
+    scanf("%d", &opcoes);
+
+    switch (opcoes){
+    case 1:
+        printf("Iniciando jogo.");
+        break;
+    case 2:
+        printf("Regras do Jogo.");
+        break;
+    case 3:
+        printf("Saindo do jogo. Até logo!");
+        break;
+    default:
+        printf("Opção inválida, Adeus.");
+        break;
+    }
+
+
+
+
+
+
+}
