@@ -4,27 +4,50 @@
 
 int main(){
 
-    float nota1, nota2, nota3, nota4;
-    float media;
+    float nota1, nota2, media;
+    int opcoes;
+    
+    
+    do{
+        printf("\n\n---Programa Status Aluno.---\n\n");
+        printf("  Escolha uma opcão:\n\n");
+        printf("| 1 - Cálculo Média.\n");
+        printf("| 2 - Status Estudante.\n");
+        scanf("%d", &opcoes);
 
-    printf("---Vamos Calcular Sua Média!---\n\n");
+        
+            switch (opcoes){
+                case 1:
+                    printf("\n---Cálculo Média Aluno.---\n\n");
+                    printf("Digite sua primeira nota: "),
+                    scanf("%f", &nota1);
+                    printf("\nDigite sua segunda nota: ");
+                    scanf("%f", &nota2);
 
-    printf("Digite sua primeira nota: ");
-    scanf("%f", &nota1);
+                    media = (nota1 + nota2) / 2;
 
-    printf("Digite sua segunda nota: ");
-    scanf("%f", &nota2);
+                    printf("\n--- Sua média é: %.1f", media);
+                break;
 
-    printf("Digite sua terceira nota: ");
-    scanf("%f", &nota3);
-
-    printf("Digite sua quarta nota: ");
-    scanf("%f", &nota4);
-
-    media = (nota1 + nota2 + nota3 + nota4) / 4;
-
-    printf("Sua média geral é: %.1f\n\n Até a Próxima!\n\n", media);
-
-    return 0;
+                case 2:
+                    printf("\n---Status Aluno.---");
+                    if (media >= 7){
+                        printf("\nVocê está aprovado!\n");
+                    } else if (media >= 5 || media < 7){
+                        printf("\nAluno em Recuperação!\n");
+                    } else {
+                        printf("\nAluno Reprovado!\n");
+                    }
+                    break;
+                    
+                default:
+                    printf("Opção Inválida!");
+                    break;
+                }
+    } while (opcoes == 1);{
+        printf("\n\nFim do programa, até logo!\n\n");
+    }
+        
+return 0;
 
 }
