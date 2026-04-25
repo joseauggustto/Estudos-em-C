@@ -360,8 +360,18 @@ Menus interativos usando Switch. ---
 //     }
 //}
 // =============================================
+
+
+
+
 /*
-Operador Ternário em C.
+Estruturas de Repetição.
+
+São ferramentas essenciais na programação, permitindo a execução repetida de um conjunto de instruções até que uma condição específica seja satisfeita.
+Elas são cruciais para criar programas eficazes e fáceis de manter. 
+Sem essas estruturas, os desenvolvedores teriam que duplicar manualmente o código para cada repetição necessária, 
+resultando em scripts longos, redundantes e propensos a erros.
+
 
 
 
