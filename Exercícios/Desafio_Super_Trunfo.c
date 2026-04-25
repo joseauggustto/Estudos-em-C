@@ -7,7 +7,7 @@ int main(){
    
     float area, pib, dens_popul, pib_per_capita, area2, pib2, dens_popul2, pib_per_capita2;
     signed long int populacao, populacao2;
-    int numerospt, numerospt2;
+    int numerospt, numerospt2, opcao;
     char estado[10], codigo_carta1[10], codigo_carta2[10], nome_cidade[30], nome_cidade2[30];
 
 
@@ -88,24 +88,188 @@ int main(){
 
 
    // ######################  DUELO ############################
+   do { 
+      
+      // printf("\n\n --- Vamos para o duelo! --- \n\n"); 
 
+      printf("\n\n---Escolha uma opção abaixo.---\n");
+      printf(" | 1 - Duelo População. \n");
+      printf(" | 2 - Duelo Área. \n");
+      printf(" | 3 - Duelo PIB. \n");
+      printf(" | 4 - Duelo Pontos Turísticos. \n");
+      printf(" | 5 - Duelo Densidade Populacional. \n");
+      printf(" | 6 - Duelo PIB per Capta. \n");
+      printf(" | 7 - Duelo SUPER. \n");
+      scanf("%d", &opcao);
 
-printf("\n\n --- Agora vamos para o duelo! --- \n\n"); 
+         switch (opcao){
+            case 1:
+               printf("\nDuelo População!\n");
+               if (populacao > populacao2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (populacao < populacao2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
 
-    printf("\n\nPopulação: %s\n\n",(populacao > populacao2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("Área: %s\n\n", (area > area2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("PIB: %s\n\n", (pib > pib2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("Pontos Turísticos: %s\n\n", (numerospt > numerospt2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("Densidade Populacional: %s\n\n", (dens_popul < dens_popul2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("PIB per Capta: %s\n\n", (pib_per_capita > pib_per_capita2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
-    printf("SUPER: %s\n\n", (super_poder_carta1 > super_poder_carta2) ? "Carta 1 Venceu!" : "Carta 2 Venceu!");
+            case 2:
+               printf("\nDuelo Área!\n");
+               if (area > area2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (area < area2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
 
+            case 3:
+               printf("\nDuelo PIB!\n");
+               if (pib > pib2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (pib < pib2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
 
-printf("\n\n ----Fim do programa, até logo!----\n\n");
+            case 4:
+               printf("\nDuelo Pontos Turísticos!\n");
+               if (numerospt > numerospt2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (numerospt < numerospt2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
+
+            case 5:
+               printf("\nDuelo Densidade Populacional!\n");
+               if (dens_popul2 > dens_popul){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (dens_popul2 < dens_popul){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
+
+            case 6:
+               printf("\nDuelo PIB!\n");
+               if (pib > pib2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (pib < pib2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
+
+            case 7:
+               printf("\nDuelo SUPER!\n");
+               if (super_poder_carta1 > super_poder_carta2){
+                  printf("\nCarta 1 Venceu!\n");
+               } else if (super_poder_carta1 < super_poder_carta2){
+                  printf("\nCarta 2 Venceu!\n");
+               } else {
+                  printf("\nEmpate técnico!\n");
+               }break;
+
+            default:
+                  printf("Erro! Escolha Inválida.");
+               break;
+         }
+
+   } while (opcao != 0); 
+   
+
+   printf("\n\n ----Fim do programa, até logo!----\n\n");
 
 
    return 0; 
 }
+
+/*
+    Exibição do Resultado: Mostrar na tela, de forma clara, o resultado da comparação, incluindo:
+     
+        O nome dos dois países.
+        O atributo usado na comparação.
+        Os valores do atributo para cada carta.
+        Qual carta venceu.
+        Em caso de empate, exibir a mensagem "Empate!".
+        
+        
+        
+===========================================
+
+
+printf("\n============================================\n");
+printf("             RESULTADO DO DUELO             \n");
+printf("============================================\n");
+
+// 1. Nome dos dois países
+printf(" CONFRONTO: %s VS %s\n", pais1, pais2);
+
+// 2. Atributo usado
+printf(" ATRIBUTO:  População\n");
+
+// 3. Valores para cada carta
+printf(" --------------------------------------------\n");
+printf(" [Carta 1] %-15s: %lu\n", pais1, populacao1);
+printf(" [Carta 2] %-15s: %lu\n", pais2, populacao2);
+printf(" --------------------------------------------\n");
+
+// 4. Lógica de quem venceu ou empate
+if (populacao1 > populacao2) {
+    printf(" VENCEDOR:  CARTA 1 (%s)!\n", pais1);
+} else if (populacao2 > populacao1) {
+    printf(" VENCEDOR:  CARTA 2 (%s)!\n", pais2);
+} else {
+    // 5. Caso de empate
+    printf(" RESULTADO: EMPATE!\n");
+}
+printf("============================================\n");
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 #include <stdio.h>

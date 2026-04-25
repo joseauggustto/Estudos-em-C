@@ -18,7 +18,7 @@ int main(){
     case 1:
         printf("\n\n---Iniciando jogo.---\n");
         srand(time(NULL));
-        escolhapc = rand() % 3;   //Esse código serve pra o computador randomizar um número com o resto 
+        escolhapc = rand() % 3;    
 
         printf("\nEscolha o seu!\n\n");
         printf(" | 0 - Pedra\n | 1 - Papel\n | 2 - Tesoura\n");
@@ -55,3 +55,4 @@ int main(){
 return 0;
 
 }
+
