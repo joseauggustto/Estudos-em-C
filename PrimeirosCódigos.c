@@ -334,34 +334,36 @@ Menus interativos usando Switch. ---
 
 */
 
-int main(){
+// int main(){
 
-    int opcoes;
+//     int opcoes;
 
-    printf("\nMenu principal\n");
-    printf("1 - Iniciar Jogo.\n");
-    printf("2 - Regras do Jogo.\n");
-    printf("3 - Saindo do Jogo.\n");
-    scanf("%d", &opcoes);
+//     printf("\nMenu principal\n");
+//     printf("1 - Iniciar Jogo.\n");
+//     printf("2 - Regras do Jogo.\n");
+//     printf("3 - Saindo do Jogo.\n");
+//     scanf("%d", &opcoes);
 
-    switch (opcoes){
-    case 1:
-        printf("Iniciando jogo.");
-        break;
-    case 2:
-        printf("Regras do Jogo.");
-        break;
-    case 3:
-        printf("Saindo do jogo. Até logo!");
-        break;
-    default:
-        printf("Opção inválida, Adeus.");
-        break;
-    }
+//     switch (opcoes){
+//     case 1:
+//         printf("Iniciando jogo.");
+//         break;
+//     case 2:
+//         printf("Regras do Jogo.");
+//         break;
+//     case 3:
+//         printf("Saindo do jogo. Até logo!");
+//         break;
+//     default:
+//         printf("Opção inválida, Adeus.");
+//         break;
+//     }
+//}
+// =============================================
+/*
+Operador Ternário em C.
 
 
 
 
-
-
-}
+*/
