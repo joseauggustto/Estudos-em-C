@@ -267,18 +267,73 @@ if (condição){
 }
 
 */
-int main(){
+// int main(){
     
-    int num = 0;
+//     int num = 0;
 
-    if (num < 0){
-        printf("Esse número é negativo\n");
-    } else if (num == 0){
-        printf("Esse número é 0.");
-        } else {
-            printf("Esse número é positivo.");
-        }
+//     if (num < 0){
+//         printf("Esse número é negativo\n");
+//     } else if (num == 0){
+//         printf("Esse número é 0.");
+//         } else {
+//             printf("Esse número é positivo.");
+//         }
 
-return 0;
+// return 0;
 
+// }
+
+//##########################################
+
+/*
+Uso do Switch.
+
+Ele funciona como um menu de variáveis onde você escolhe qual quer.
+A estrutura é mais ou menos assim:
+
+switch (varivavel){
+    case valor1:
+        break;
+    case valor2:
+        break;
+    default:
 }
+*/
+
+// int main(){
+
+//     int opcao;
+//     float saldo = 1000;
+
+//     printf("Escolha uma opção: \n\n");
+//     printf("1 - Verificar saldo\n");
+//     printf("2 - Fazer depósito\n");
+//     scanf("%d", &opcao);
+
+
+//     switch (opcao){
+//     case 1:
+//         printf("Seu saldo é: %.2f", saldo);
+//         break;
+//     case 2:
+//         printf("Qual a conta? rsrsrs");
+//         break;
+//     default:
+//         printf("Até logo.\n");
+//     }
+
+// }
+
+// #########################################
+
+/*
+
+Menus interativos usando Switch.
+
+
+
+
+
+
+
+*/
