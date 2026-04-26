@@ -11,7 +11,8 @@ int main(){
     printf("| T - Torre \n");
     printf("| B - Bispo \n");
     printf("| R - Rainha \n");
-    printf("Digite aqui:   ");
+    printf("| C - Cavalo \n");
+    printf("\nDigite aqui: ");
     scanf(" %c", &opcoes);
 
         switch (opcoes){
@@ -78,6 +79,27 @@ int main(){
                     if (lados == 'E'|| lados == 'e') printf("Esquerda\n");
                  }               
 
+            break;
+        case 'C':
+        case 'c':
+
+            printf("\n - Movimento do Cavalo - \n\n");
+
+            int j = 1;
+
+            while (i <= 1)  // O código vai rodar até dar meno ou igual a 1. O i já é igual 1, então ele só roda uma vez.
+            {
+                for (j ; j <= 2; j++)  // Esse loop vai rodar até dar menor igual a dois, vai imprimir duas vezes e sair fora para o while.
+                {
+                    printf("Baixo\n");  
+                }
+             printf("Esquerda\n");  
+
+             i++; // Esse incremento serve pra o código não entrar em loop.  
+                  // Se não tivesse ele, ia ser sempre 1 e o loop ia quebrar em infinito.  
+                  // Como tem ele, após o fim do loop, ele tentar subir pra 2, mas a condição do while não permite e o código termina.
+            }
+            
             break;
 
         default:
