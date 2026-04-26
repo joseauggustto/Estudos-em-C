@@ -141,3 +141,52 @@ Loops Avançados.
     
 //     return 0;
 // }
+
+// #######################################################################
+
+/* 
+Recursividade.
+
+São blocos de código que realizam uma tarefa específica, mas não retornam um valor. 
+Eles são definidos com um tipo de retorno void e podem ter parâmetros opcionais.
+
+Os blocos de códigos são chamados dentro de outros blocos de código para executar suas operações, 
+mas não geram um resultado que precisa ser utilizado imediatamente. 
+Os procedimentos são úteis para organizar e simplificar programas, melhorando a legibilidade e a manutenção do código.
+
+
+*/
+
+// void saudação() 
+//     {
+//         printf("Hello, world!\n"); // Para ser usada, precisa criar fora do main.
+//     }
+
+// int main(){
+
+//     saudação(); 
+
+// return 0;
+// }
+
+
+
+// void rescurso(int n)
+//     {
+//         if (n > 0)
+//         {
+//             printf("%d\n", n);
+//             rescurso(n - 1);
+//         }   
+//     }
+
+// int main(){
+
+//     int numero = 10;
+//     printf("\nobserve:\n");
+//     rescurso(numero);
+
+//     printf("\nBUMM!\n");
+
+// return 0; 
+// }
