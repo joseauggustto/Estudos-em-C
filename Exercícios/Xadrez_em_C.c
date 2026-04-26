@@ -1,46 +1,55 @@
 #include <stdio.h>
 
-int main(){
+void movimentoTorre(){
 
-    char opcoes, lados, cima, direita, esquerda;
-    int movimentos; 
-    int i = 1;
+    char lados;  
+    int movimentos, i;
 
-    printf("\n---Bem vindo ao Xadrez!---\n\n");
-    printf(" - Escolha uma peça: - \n\n");
-    printf("| T - Torre \n");
-    printf("| B - Bispo \n");
-    printf("| R - Rainha \n");
-    printf("| C - Cavalo \n");
-    printf("\nDigite aqui: ");
-    scanf(" %c", &opcoes);
+    printf("\n - Escolha para que lado a Torre irá: -\n\n");
+    printf("| C - Cima\n| B - Baixo\n| D - Direita\n| E - Esquerda\n");
+    scanf(" %c", &lados);
 
-        switch (opcoes){
-        case 'T':
-        case 't':
+    printf(" Quanto movimentos ela irá?  \n");
+    scanf("%d", &movimentos);
+        
+        i = 1;
 
-            printf("\n - Escolha para que lado a Torre irá: -\n\n");
-            printf("| C - Cima\n| B - Baixo\n| D - Direita\n| E - Esquerda\n");
-            scanf(" %c", &lados);
+        while (i <= movimentos){ 
 
-            printf(" Quanto movimentos ela irá?  \n");
-            scanf("%d", &movimentos);
-                
-                i = 1;
+            if (lados == 'C'|| lados == 'c') printf("Cima\n");
+            if (lados == 'B'|| lados == 'b') printf("Baixo\n");
+            if (lados == 'D'|| lados == 'd') printf("Direita\n");
+            if (lados == 'E'|| lados == 'e') printf("Esquerda\n");
+            i++; 
+            
+        }
+}
 
-                while (i <= movimentos){ 
+void movimentoRainha(){ 
+    int movimentos, i;
+    char lados; 
 
-                    if (lados == 'C'|| lados == 'c') printf("Cima\n");
-                    if (lados == 'B'|| lados == 'b') printf("Baixo\n");
-                    if (lados == 'D'|| lados == 'd') printf("Direita\n");
-                    if (lados == 'E'|| lados == 'e') printf("Esquerda\n");
-                    i++;
-                }                 
+    printf("\n - Escolha para que lado a Rainha irá: -\n\n");
+    printf("| C - Cima\n| B - Baixo\n| D - Direita\n| E - Esquerda\n");
+    scanf(" %c", &lados);
 
-            break;
+    printf(" Quanto movimentos ela irá?  \n");
+    scanf("%d", &movimentos);
 
-        case 'B':
-        case 'b':  
+            for (i = 1; i <= movimentos; i++)
+            {
+            if (lados == 'C'|| lados == 'c') printf("Cima\n");
+            if (lados == 'B'|| lados == 'b') printf("Baixo\n");
+            if (lados == 'D'|| lados == 'd') printf("Direita\n");
+            if (lados == 'E'|| lados == 'e') printf("Esquerda\n");
+            }               
+
+}
+
+void movimentoBispo(){
+
+            char lados;
+            int i, movimentos;
 
             printf("\n - Escolha para que lado o Bispo irá: -\n\n");
             printf("| D - Cima e Direita\n| E - Cima e Esquerda\n");
@@ -59,25 +68,41 @@ int main(){
                 
             } while (i <= movimentos);
     
+} 
+
+int main(){
+
+    char opcoes, lados, cima, direita, esquerda;
+    
+
+    printf("\n---Bem vindo ao Xadrez!---\n\n");
+    printf(" - Escolha uma peça: - \n\n");
+    printf("| T - Torre \n");
+    printf("| B - Bispo \n");
+    printf("| R - Rainha \n");
+    printf("| C - Cavalo \n");
+    printf("\nDigite aqui: ");
+    scanf(" %c", &opcoes);
+
+        switch (opcoes){
+        case 'T':
+        case 't':
+
+            movimentoTorre(); 
+
+            break;
+
+        case 'B':
+        case 'b':  
+
+            movimentoBispo();
+
             break;
             
         case 'R':
         case 'r':
 
-            printf("\n - Escolha para que lado a Rainha irá: -\n\n");
-            printf("| C - Cima\n| B - Baixo\n| D - Direita\n| E - Esquerda\n");
-            scanf(" %c", &lados);
-
-            printf(" Quanto movimentos ela irá?  \n");
-            scanf("%d", &movimentos);
-
-                 for (i = 1; i <= movimentos; i++)
-                 {
-                    if (lados == 'C'|| lados == 'c') printf("Cima\n");
-                    if (lados == 'B'|| lados == 'b') printf("Baixo\n");
-                    if (lados == 'D'|| lados == 'd') printf("Direita\n");
-                    if (lados == 'E'|| lados == 'e') printf("Esquerda\n");
-                 }               
+            movimentoRainha();
 
             break;
         case 'C':
@@ -85,11 +110,12 @@ int main(){
 
             printf("\n - Movimento do Cavalo - \n\n");
 
-            int j = 1;
+            int i = 1;
+            int j = 1;   
 
             while (i <= 1)  // O código vai rodar até dar meno ou igual a 1. O i já é igual 1, então ele só roda uma vez.
             {
-                for (j ; j <= 2; j++)  // Esse loop vai rodar até dar menor igual a dois, vai imprimir duas vezes e sair fora para o while.
+                for (j; j <= 2; j++)  // Esse loop vai rodar até dar menor igual a dois, vai imprimir duas vezes e sair fora para o while.
                 {
                     printf("Baixo\n");  
                 }
