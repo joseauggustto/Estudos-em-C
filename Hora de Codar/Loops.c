@@ -74,4 +74,25 @@
 //     }
     
 // return 0; 
-// }
+// } 
+
+// #######################################
+
+// Loops aninhados. 
+/*
+Pense em loops aninhados como um relógio. 
+Um só vai fazer a volta quando o outro terminar a volta dele.
+*/
+
+int main (){
+
+    for (int i = 1; i <= 2; i++){
+
+                    for(int j = 1; j <= 5; j++)
+                        {
+                    printf("%d \n", i * j);
+                    }  
+    printf("\n");
+    } 
+    return 0;
+}
