@@ -13,7 +13,7 @@
 // }
 
 
-// #####################################
+// #######################################################################
 
 // int main(){
 
@@ -33,7 +33,7 @@
 
 // }
 
-// #####################################
+// #######################################################################
 
 // int main(){
 
@@ -58,7 +58,7 @@
 
 // }
 
-// #####################################
+// #######################################################################
 
 // int main(){
 
@@ -76,7 +76,7 @@
 // return 0; 
 // } 
 
-// #######################################
+// #######################################################################
 
 // Loops aninhados. 
 /*
@@ -84,15 +84,60 @@ Pense em loops aninhados como um relógio.
 Um só vai fazer a volta quando o outro terminar a volta dele.
 */
 
-int main (){
+// int main (){
 
-    for (int i = 1; i <= 2; i++){
+//     for (int i = 1; i <= 2; i++)
+//     {
+//         for(int j = 1; j <= 5; j++)
+//         {
+//             printf("%d \n", i * j);
+//         }        
+//         printf("\n");
+//     } 
+//     return 0;
+// }
 
-                    for(int j = 1; j <= 5; j++)
-                        {
-                    printf("%d \n", i * j);
-                    }  
-    printf("\n");
-    } 
-    return 0;
-}
+// #######################################################################
+
+/*
+Loops Avançados.
+
+
+*/
+
+// int main(){
+
+//     for (int i = 0, j = 10; i <= j; i++, j--)
+//     {
+//         printf("i = %d, j = %d\n", i, j);
+//     }
+    
+
+//     return 0;
+// }
+
+// int main(){
+
+//     for (int i = 0; i < 10; i++)
+//     {
+//         if (i == 5) continue;
+//         if (i == 8) break;
+
+//         printf("%d", i);  
+//     }
+    
+//     return 0;
+// }
+
+// int main(){
+
+//     for (int i = 0; // Começa em 0
+//              i < 10; // Vai até onde eu definir
+//              i += (i % 2 == 0) ? 1 : 2 )  // Se o resto da divisão por 2 for 0, I será acrescentado 1. Nesse caso vai mostrar os números impares.
+//              { 
+//                 printf("%d", i );
+//              }
+    
+    
+//     return 0;
+// }
