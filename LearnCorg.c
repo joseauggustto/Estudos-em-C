@@ -355,3 +355,34 @@ Adendo: o comando continue não vai adicionar nada na posição que ele está, v
 
 //     return 0;
 // }
+
+// ####################################################################
+
+/*
+FUNÇÔES! (LEGAL DEMAIS)
+
+As funções são maneiras de escrever códigos simples antes do código principal para que não fique algo repitivo e gigante.
+Se for preciso usar, é só chamar as funções durante o código pra elas executarem suas funções.
+
+*/
+
+// EXERCÍCIO: 
+
+// #include <stdio.h>
+
+// void print_big(int number){
+
+//     if (number > 10)
+//     {
+//         printf("%d is big\n", number);
+//     } 
+// }
+
+// int main() {
+//   int array[] = { 1, 11, 2, 22, 3, 33 };
+//   for (int i = 0; i < 6; i++) {
+//     print_big(array[i]);
+//   }
+//   return 0;
+// }
+
