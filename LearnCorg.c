@@ -138,7 +138,220 @@ O IF é uma declaração que nos permite saber se algo é true or false. Se sim,
 
 Em contrapartida ao IF, temos o ELSE. Ele executa o trabalho quando o if é falso. "Se não if, else!."
 
+Ainda, temos o ELSE IF. Ele é um "meio termo". Quando não if, else if. Quando não if e else if, ELSE!
 
+------------------------
+
+Ainda mais à frente, temos os operadores lógicos! 
+Eles servem pra verificar duas operações lógicas e definir o resultado final. 
+
+Temos o && - "E", significa que ambas as operações DEVEM ser verdade. 1 && 1 saída = 1
+
+Temos o || - "OU", significa que ao MENOS UMA deve ser verdade. Se for 0 || 0 saída = 0. Todo o resto vai ser = 1. 
+
+E por último o != "NÂO", ele vai negar tudo. 1 vai ser 0 - 1 != saída 0. 
+
+*/
+
+// EXERCÍCIO PARA RESOLVER
+
+// #include <stdio.h>
+
+// void guessNumber(int guess) // função void, usada pra criar um "função" (???)
+// {
+//     int num = 555; // precisava definir o número correto pra o usuário saber como foi sua aposta, e eu consegui esquecer disso KKKKKKKKKKKKKKKKKKKKKKK
+//     if (num == guess) {
+//             printf("Correct, You guessed it!\n");
+//         } 
+//             else if (num > guess){
+//                 printf("Your guess is too low.\n");
+//             } 
+//                 else {
+//                     printf("Your guess is too high.\n");
+//                 }
+        
+// }
+
+// int main() {
+//     guessNumber(500);
+//     guessNumber(600);
+//     guessNumber(555);
+// }
+
+
+// ####################################################################
+
+/*
+STRINGS! 
+
+Strings em C são na verdade arrays de caracteres.
+
+O segredo do array string é o caracterere nulo no fim: char nome[5] = {'J', 'o', 's', 'e', '\0'};
+Esse caractere vai dizer ao computador onde parar de ler.
+
+Se eu fizer: char nome[] = "José";  Ele vai colcoar o \0 automaticamente no fim.
 
 
 */
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(){
+
+//     char nome[] = "Jose"; // se tiber acento, vai contar um byte a mais!
+
+//     printf("%d\n", strlen(nome));
+//  // -------------------------------
+//     if (strncmp(nome, "Jose", 4) == 0)
+//     {
+//         printf("Yes\n");
+//     } else {
+//         printf("Não");
+//     }
+//   // ------------------------------ 
+//     char dest[20]="Hello";
+//     char src[20]="World";
+    
+//     strncat(dest,src,3);
+//     printf("%s\n",dest);
+
+//     strncat(dest,src,20);
+//     printf("%s\n",dest);
+// }
+
+
+// EXERCÍCIO PARA RESOLVER
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+
+//   char first_name[] = "John";
+//   char last_name[] = "Doe";
+//   char name[100];
+
+//   last_name[0] = 'B';
+//   sprintf(name, "%s %s", first_name, last_name); // esse comando vai montar a palavra e armazenar na variável name
+//   if (strncmp(name, "John Boe", 100) == 0) {           // Sempre que possível, use o snprintf. 
+//       printf("Done!\n");                               // Ele tem um "n" no meio que permite você dizer o tamanho máximo da caixa. >>> snprintf(mensagem, 50, "Sensor: %d", valor);
+//   }
+//   name[0]='\0';
+//   strncat(name,first_name,4);
+//   strncat(name,last_name,20);
+//   printf("%s\n",name);
+//   return 0;
+// }
+
+// ####################################################################
+
+/*
+FOR LOOPS!
+
+Esse comando tem a capacidade de criar um bloco de código que será executado quantas vezes for pré-definido. 
+
+o formato básico é for(int i = 0; i < 0; i++) e logo após um printf.
+
+*/
+
+// EXEMPLO!
+
+// #include <stdio.h>
+
+// int main(){
+
+//     int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//     int sum; 
+
+//     for (int i = 0; i < 10; i++)
+//     {
+//         sum += array[i];
+//     }
+
+//     printf("%d\n", sum);
+
+//     return 0;
+// }
+
+// EXERCÍCIO PARA RESOLVER 
+
+// #include <stdio.h>
+
+// int main() {
+//   int array[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//   int factorial = 1;
+//   int i;
+
+//   for (i = 0; i < 10; i++)
+//   {
+//     factorial *= array[i];  // era só criar essa função pra gerar um fatorial do array de 10 números. 
+//   }
+
+//   printf("10! is %d.\n", factorial);
+// }
+
+// ####################################################################
+
+/*
+
+Loop com While. ---
+
+Esse comando diz que: "Enquanto não chegar a isso, faça isso", mais ou menos assim. 
+
+Ele pode executar infinitamente uma função assim: 
+
+while (1) {  }   -   Enquanto não der 0, ele vai continuar infinitamente. 
+
+Temos os comandos break; e continue; Eles servem pra parar ou prossegui a execução em determinado ponto. 
+
+Adendo: o comando continue não vai adicionar nada na posição que ele está, vai pular e ignorar onde ele estava.
+                
+*/
+
+// EXEMPLO:
+
+// #include <stdio.h>
+
+// int main() {
+
+//     int n = 0;
+
+//     while (n < 20)
+//     { 
+//         n++; // aquele velho incremento pra não quebrar o código...
+
+//         if (n % 2 == 1) {   // todos os numeros ímpares serão "excluídos"
+//             continue;
+//       }
+//      printf("número par: %d\n", n);   
+//     } 
+
+//     return 0;
+// }
+
+// EXERCÍCIO!
+
+// #include <stdio.h>
+
+// int main() {
+//     int array[] = {1, 7, 4, 5, 9, 3, 5, 11, 6, 3, 4};
+//     int i = 0;
+
+//     while (i < 10) {
+
+//         if (array[i] < 5)    // Tive que criar esse if e else if para cumprir os requisitos da atividade. 
+//         { i++;     // É necessário esse incremento aqui pra que o código não fique travado na primeira tentativa.
+//             continue;
+
+//         }    else if (array[i] > 10)
+//             {
+//                 break;
+//             }
+        
+//         printf("%d\n", array[i]);
+//         i++;
+//     }
+
+//     return 0;
+// }
