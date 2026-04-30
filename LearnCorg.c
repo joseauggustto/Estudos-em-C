@@ -451,8 +451,9 @@ p = &num;        // 3. Usa o '&' para pegar o endereço da caixa e anotar no pap
 
 
 */
+// --------------------------
 
-// EXEMPLO: 
+// EXEMPLO----: 
 
 // #include <stdio.h>
 
@@ -479,17 +480,19 @@ p = &num;        // 3. Usa o '&' para pegar o endereço da caixa e anotar no pap
 
 //EXERCÍCIO!!
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-  int n = 10;
+// int main() {
+//   int n = 10;
+//   int *pointer_to_n; //Agora essa variável vai receber endereços. 
 
-  /* your code goes here */
+//   pointer_to_n = &n; // Agora o papel de endereços vai receber o endereço de n.
+//     n++;
 
-  /* testing code */
-  if (pointer_to_n != &n) return 1;
-  if (*pointer_to_n != 11) return 1;
+//   if (pointer_to_n != &n) return 1; //Aqui ele vai checar se o endereço que o ponteiro guardou e diferente do endereço de N, não é diferente.
+//   if (*pointer_to_n != 11) return 1; //Aqui ele vai acessar o endereço pra ver se ele é diferente de 11, não é porque teve um incremento no 10.
 
-  printf("Done!\n");
-  return 0;
-}
+//   printf("Done!\n");
+
+//   return 0;
+// }
