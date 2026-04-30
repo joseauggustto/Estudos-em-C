@@ -386,3 +386,110 @@ Se for preciso usar, é só chamar as funções durante o código pra elas execu
 //   return 0;
 // }
 
+
+// ####################################################################
+
+/*
+Função STATIC!
+
+static é uma palavra-chave na linguagem de programação C. Pode ser usado com variáveis e funções.
+Quando você coloca static, a variável não morre quando a função termina. Ela fica "viva" em um cantinho da memória, esperando você chamar a função de novo.
+
+*/
+// // EXERCíCÌO!
+
+//    #include <stdio.h>
+//    int sum (int num) {
+       
+//         static int total = 0; 
+//         total += num;
+//         return total;
+
+//    }
+
+//    int main() {
+//        printf("%d ",sum(55));
+//        printf("%d ",sum(45));
+//        printf("%d ",sum(50));
+//        return 0;
+//    }
+
+
+// ####################################################################
+
+/*
+PONTEIROS!
+
+Os ponteiros também são variáveis e desempenham um papel muito importante na linguagem de programação C. 
+São utilizados por diversas razões, tais como:
+
+    Cordas
+    Alocação dinâmica de memória
+    Envio de argumentos de função por referência
+    Construção de estruturas de dados complicadas
+    Apontando para funções
+    Construção de estruturas de dados especiais (i.e. Árvore, Tentativas, etc...)
+
+
+Para ponteiros, temos dois algarismos que vão ser utilizados na manipulação:
+
+O &: ele é o "GPS". Ele vai dizer exatamente na memória onde aquele valor está guardado. 
+Se eu iniciar uma variável idade assim &idade = 25, ele vai dizer onde o 25 está guardado. Podendo usar essa informação posteriormente. 
+
+E temos o *. Ele é usado para avisar ao computador que uma variável agora é ponteiro, que vai guardar o endereço. 
+E também é usado para mudar dados de uma variável ponteiro. Você coloca o * a variável e o novo dado, que ele vai lá e muda o dado no mesmo endereço.
+
+
+------------------------------
+
+
+int num = 10;    // 1. Cria a caixa 'num' com o valor 10
+int *p;          // 2. Cria um papel 'p' para anotar endereços
+
+p = &num;        // 3. Usa o '&' para pegar o endereço da caixa e anotar no papel
+*p = 20;         // 4. Usa o '*' para ir até o endereço anotado e mudar o 10 para 20
+
+
+*/
+
+// EXEMPLO: 
+
+// #include <stdio.h>
+
+// int main() {
+//     int numero = 10;     // Uma variável comum
+//     int *ponteiro;       // Declarando um ponteiro (o '*' aqui diz: "eu sou um ponteiro")
+
+//     ponteiro = &numero;  // O ponteiro recebe o ENDEREÇO da variável 'numero'
+
+//     printf("Valor de numero: %d\n", numero);
+//     printf("Endereco de numero: %p\n", &numero); // %p serve para imprimir endereços
+//     printf("O ponteiro aponta para o endereco: %p\n", ponteiro);
+    
+//     // A MÁGICA: mudar o valor usando o ponteiro
+//     *ponteiro = 60;      // "Vá no endereço que eu guardo e mude o valor lá para 20"
+
+//     printf("Novo valor de numero: %d\n", numero);
+//     printf("%d\n", numero);
+//     printf("%p", &numero);
+
+//     return 0;
+// }
+
+
+//EXERCÍCIO!!
+
+#include <stdio.h>
+
+int main() {
+  int n = 10;
+
+  /* your code goes here */
+
+  /* testing code */
+  if (pointer_to_n != &n) return 1;
+  if (*pointer_to_n != 11) return 1;
+
+  printf("Done!\n");
+  return 0;
+}
