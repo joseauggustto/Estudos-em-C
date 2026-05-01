@@ -496,3 +496,62 @@ p = &num;        // 3. Usa o '&' para pegar o endereço da caixa e anotar no pap
 
 //   return 0;
 // }
+
+// ####################################################################
+
+/*
+
+Estruturas!
+
+Estruturas C são variáveis especiais, grandes, que contêm várias variáveis nomeadas no interior. Estruturas são a base básica para objetos e classes em C. Estruturas são utilizadas para:
+
+    Serialização de dados
+    Passar vários argumentos dentro e fora de funções através de um único argumento
+    Estruturas de dados, como listas vinculadas, árvores binárias e muito mais
+
+
+    Pense em um Perfil de Usuário no Back-end: ele tem nome, idade e ID. Sem Structs, você teria variáveis soltas. 
+    Com Structs, você cria um novo tipo de dado que agrupa tudo isso.
+
+        Analogia: Se uma variável comum é um item solto na sua mochila, a struct é um estojo onde você guarda caneta, lápis e borracha juntos.
+        Eles continuam sendo itens diferentes, mas agora fazem parte de uma unidade chamada "Estojo".
+
+
+*/
+// EXERCÍCIO - com duas formas de fazer !!
+
+// #include <stdio.h>
+// #include <string.h>
+
+// struct person
+// {
+//     char name[20];
+//     int age;
+// };
+
+// int main() {
+
+//     struct person john;
+
+//     strcpy(john.name, "John"); -- Para colocar um texto dentro de um array que já existe na struct, você precisa copiar os caracteres um por um. 
+//                                          A função strcpy (string copy) faz exatamente isso.
+//     john.age = 27; 
+//     printf("%s is %d years old.", john.name, john.age);
+// }
+
+// // -------------------------
+
+
+// // #include <stdio.h>
+
+// // struct person
+// // {
+// //     char name[20];
+// //     int age;
+// // };
+
+// // int main() {
+
+// //     struct person john = {"John", 27};
+// //     printf("%s is %d years old.", john.name, john.age);
+// // }
