@@ -106,30 +106,72 @@
 
 // ##################################################################
 
+// int main(){
+
+//     float array[2][3]; // duas linhas e 4 colunas 
+    
+//     for (int i = 0; i < 2 ; i++){ // Esse aqui vai dar uma volta só quando o de dentro der 3. 
+//         for (int j = 0; j < 3; j++){  // Esse aqui vai dar 3 voltas pra o de fora dar 1.
+//             printf("Digite a quantidade: ");
+//             scanf("%f", &array[i][j]); 
+//         } 
+//     }
+//     float total = 0; 
+//     for (int i = 0; i < 2; i++){  // Esse aqui vai dar uma volta só quando o de dentro der 3. 
+//         float somaDia = 0;
+//         for (int j = 0; j < 3; j++){  // Esse aqui vai dar 3 voltas pra o de fora dar 1.
+//             total += array[i][j];
+//             somaDia += array[i][j];  
+//         } 
+//         float media = somaDia / 3;
+
+//         printf("\nA média do dia %d é: %.1f\n", i + 1, media); 
+//     } 
+
+//     printf("\nO total é %f\n", total);
+    
+//     return 0;
+// }
+
+// ##################################################################
+
 int main(){
 
+    float tabelaAlunos[3][2];
 
-    float array[2][3];
+    for (int i = 0; i < 3; i++)
+    {
+    printf("\n -- Notas Aluno: %d\n", i + 1);
 
-    for (int i = 0; i < 2; i++){
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < 2; j++)
         {
-            printf("Digite o preço %d:", i + 1);
-            scanf("%f", &array[i][j]);
+            printf("Digite a nota %d: ", j + 1);
+            scanf("%f", &tabelaAlunos[i][j]);
         }
+        
     }
 
+    for (int i = 0; i < 3; i++)
+    { 
+        float soma = 0; 
 
+        for (int j = 0; j < 2; j++)
+        {
+         soma += tabelaAlunos[i][j]; 
+        } 
+        float mediaaluno = soma / 2;
 
-    // float total = 0; 
+        printf("\nMédia aluno %d: %.1f\n", i + 1, mediaaluno); 
 
-    // for (int i = 0; i < 5; i++)
-    // {
-    //     total += array[i];
-    // }
-    // printf("total: %.1f\n", total);
-    
+        if (mediaaluno >= 7.0)
+        {
+            printf("Aluno %d com média %.1f está: Aprovado!\n", i + 1, mediaaluno);
+        } else {
+            printf("Aluno %d com média %.1f está: Reprovado!\n", i + 1, mediaaluno);
+        }
+        
+        
+    }
 
-    
     return 0;
 }
