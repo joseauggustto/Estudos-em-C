@@ -44,3 +44,31 @@
 
 // ####################################################################
 
+// Tabela 10x10 
+
+// #include <stdio.h>
+
+// int main() {
+//     int tabela[10][10];
+
+//     // FASE 1: PREENCHER (Guardar na memória)
+//     for (int i = 0; i < 10; i++)
+//     {
+//         for (int j = 0; j < 10; j++) 
+//         {
+//             tabela[i][j] = (i + 1) * (j + 1);
+//         }
+//     }
+//     // FASE 2: IMPRIMIR (Mostrar na tela)
+//     for (int i = 0; i < 10; i++) 
+//     {
+//         for (int j = 0; j < 10; j++) 
+//         {
+//             printf("%3d ", tabela[i][j]);  // O %3d serve para alinhar os números
+//         }
+        
+//         printf("\n");
+//     }
+
+//     return 0;
+// }
