@@ -3,31 +3,44 @@
 
 // Let's go.
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void medianotas(float nota){
+// float calcularMedia(float notas_recebidas[], int tamanho){   // Essas variáveis só se usam aqui, são apelidos dados para que elas funcionem na função.
 
-    float media, notas; 
+//     float soma = 0; // Isso aqui vai zerar a variável soma se ela estiver com algum número sujo.
 
-    media = (nota += notas) / 5; 
-}
+//     for (int i = 0; i < tamanho; i++){   // Aqui está um loop que vai somar as notas durante o número de vezes específicado. 
+//         soma += notas_recebidas[i];
+//     }
+    
+//     return soma / tamanho; // E aqui ele vai pegar a soma feita e dividir pelo tamanho especificado.
+// }
 
-int main(){
+// int main(){
 
-    float notas[5];
+//     float notas[5]; 
 
-    for (int i = 0; i < 5; i++)
-    {
-        printf("Digite a nota %d: ", i + 1);
-        scanf("%f", &notas[i]);
-    }
+//     for (int i = 0; i < 5; i++)
+//     {
+//         printf("Digite a nota %d: ", i + 1);
+//         scanf("%f", &notas[i]);
+//     }
 
-    for (int i = 0; i < 5; i++)
-    {
-        printf("%.1f ", notas[i]);
-    }
+//     float resultado = calcularMedia(notas, 5);  // Aqui é onde eu chamo a função. Eu defino uma variável de nome resultado e ela vai chamar a função.
+//                                                     // A função foi construída pra receber dois dados,
+//                                                       //o array de notas e o número de casas, como foi dito na função lá em cima. 
 
-    printf("\nSua média é: %.1f\n", medianotas);
+//     printf("Sua média é: %.1f\n", resultado);
 
-    return 0;
-}
+//     if (resultado >= 7)
+//     {
+//         printf("Parabéns, aprovado.");
+//     } else {
+//         printf("Reprovado!\n"); 
+//     }
+
+//     return 0;
+// }
+
+// ####################################################################
+
