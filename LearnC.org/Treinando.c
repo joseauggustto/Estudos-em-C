@@ -135,43 +135,70 @@
 
 // ##################################################################
 
-int main(){
+// int main(){
 
-    float tabelaAlunos[3][2];
+//     float tabelaAlunos[3][2];
 
-    for (int i = 0; i < 3; i++)
-    {
-    printf("\n -- Notas Aluno: %d\n", i + 1);
+//     for (int i = 0; i < 3; i++)
+//     {
+//     printf("\n -- Notas Aluno: %d\n", i + 1);
 
-        for (int j = 0; j < 2; j++)
-        {
-            printf("Digite a nota %d: ", j + 1);
-            scanf("%f", &tabelaAlunos[i][j]);
-        }
+//         for (int j = 0; j < 2; j++)
+//         {
+//             printf("Digite a nota %d: ", j + 1);
+//             scanf("%f", &tabelaAlunos[i][j]);
+//         }
         
-    }
+//     }
 
-    for (int i = 0; i < 3; i++)
-    { 
-        float soma = 0; 
+//     for (int i = 0; i < 3; i++)
+//     { 
+//         float soma = 0; 
 
-        for (int j = 0; j < 2; j++)
-        {
-         soma += tabelaAlunos[i][j]; 
-        } 
-        float mediaaluno = soma / 2;
+//         for (int j = 0; j < 2; j++)
+//         {
+//          soma += tabelaAlunos[i][j]; 
+//         } 
+//         float mediaaluno = soma / 2;
 
-        printf("\nMédia aluno %d: %.1f\n", i + 1, mediaaluno); 
+//         printf("\nMédia aluno %d: %.1f\n", i + 1, mediaaluno); 
 
-        if (mediaaluno >= 7.0)
-        {
-            printf("Aluno %d com média %.1f está: Aprovado!\n", i + 1, mediaaluno);
-        } else {
-            printf("Aluno %d com média %.1f está: Reprovado!\n", i + 1, mediaaluno);
-        }
+//         if (mediaaluno >= 7.0)
+//         {
+//             printf("Aluno %d com média %.1f está: Aprovado!\n", i + 1, mediaaluno);
+//         } else {
+//             printf("Aluno %d com média %.1f está: Reprovado!\n", i + 1, mediaaluno);
+//         }
         
         
-    }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
+// ##################################################################
+
+// int main(){
+
+//     int tabela[10][10];
+
+//     for (int i = 0; i < 10; i++)
+//     {
+//         for (int j = 0; j < 10; j++)
+//         {
+//             tabela[i][j] = (i + 1) * (j + 1);
+//         }
+        
+//     }
+    
+//     for (int i = 0; i < 10; i++)
+//     {
+//         for (int j = 0; j < 10; j++)
+//         {
+//             printf("%4d", tabela[i][j]);
+//         }
+//         printf("\n");
+//     }
+    
+
+//     return 0;
+// }
